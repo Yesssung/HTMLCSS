@@ -10,6 +10,44 @@
     <h2>기본 테이블 태그 실습</h2>
 
     <!-- 기본 테이블 연습 -->
+    <!-- 원래 border, width, height 속성들은 Style Sheet에서 표시 -->
+    <!-- 테이블 선언-->
+    <table border = "1">
+        <caption>성적표</caption>
+        <!-- 테이블 헤더 : thead-->
+        <thead>
+        <!-- 행 정보 : tr -->
+        <tr>
+            <!-- 헤더 : td-->
+            <th width = "200" height = "30">이름</th>
+            <th>나이</th>
+            <th>점수</th>
+        </tr>
+        </thead>
+
+        <!-- 실제 데이터 : tbody-->
+        <tbody>
+            <tr>
+                <td>김철수</td>
+                <td>22</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td>홍길동</td>
+                <td>28</td>
+                <td>90</td>
+            </tr>
+        </tbody>
+    <!-- 테이블 요약 : tfoot -->
+    <tfoot>
+        <tr>
+            <td></td>
+            <td></td> <!-- 만약 행이 없어진다면 앞으로 한칸씩 땡겨짐-->
+            <td>178</td>
+        </tr>
+    </tfoot>
+
+    </table>
 
     <h2>열과 행의 확장</h2>
     <ul>
