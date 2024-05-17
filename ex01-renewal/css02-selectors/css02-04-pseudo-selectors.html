@@ -31,6 +31,20 @@
         input[type = "checkbox"]:checked + label {
             color: mediumorchid;
         }
+
+        /* 구조 선택자 : 등장하는 순서에 따른 선택. 주로 형제 관계 */
+        ul#list > li:nth-child(2n) { /* ul#list의 자식들 li 중에서 2n번째 (짝수) 요소들 */
+            color: blue;
+        }
+        ul#list > li:nth-child(2n+1) {/* ul#list의 자식들 li 중에서 2n+1번째 (홀수) 요소들 */
+            color: pink;
+        }
+        ul#list > li:first-child { /* = nth-child(1) */
+            color: greenyellow;
+        }
+        ul#list > li:last-child {
+            color: yellow;
+        }
     </style>
 </head>
 
