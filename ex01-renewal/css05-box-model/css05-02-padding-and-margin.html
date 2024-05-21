@@ -4,11 +4,81 @@
 <head>
     <title>CSS Box Model 실습</title>
 </head>
+<style>
+    /* 기본 margin 과 padding 초기화 */
+    * {
+        margin: 0; /* margin 은 뭔가 페이지 전체를 놓고 본달까..*/
+        padding: 0;
+    }    
+    .padding-box {
+        /* 너비를 지정하지 않으면 페이지 전체를 점유한다. -> 나머지는 auto(자동조정) 됨 */
+    }
+    .margin-box {
+
+    }
+    .bottom-box {
+        display: flex;
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* padding 속성 : 내부 간격 */
+    .padding-box {
+        /* 값이 1개 : 4방향 모두 같은 값*/
+        /* padding: 100px; */
+
+        /* 방향 접미사를 사용, 개별 간격 적용 */
+        /* padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        padding-left: 40px; */
+
+        /* 값이 4개 : top right bottom left(top이 기준) */
+        padding: 10px 20px 30px 40px;
+
+        /* 값이 2개 : top-bottom, left-right -> 위 아래는 10px, 양옆은 20px */
+        padding : 10px 20px;
+    }
+
+    /* margin 속성 : 외부 간격*/
+    .margin-box {
+        border: 2px solid black;
+        /* 값이 1개 : 4방향 모두 같은 값*/
+        /* margin: 100px; */
+
+        /* 방향 접미사를 사용, 개별 간격 적용 */
+        /* margin-top: 10px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        margin-left: 40px; */
+
+        /* 값이 4개 : top right bottom left(top이 기준) */
+        margin: 10px 20px 30px 40px;
+
+        /* 값이 2개 : top-bottom, right-left */
+        margin : 10px 20px;
+    }
+
+</style>
 
 <body>
     <h1>CSS Box Model 실습</h1>
-    <div class="padding-box">Padding Box</div>
-    <div class="margin-box">Margin Box</div>
+    <div class="padding-box" style="display: flex;
+    width: 100px;        
+    height: 30px;
+    background-color: lightpink;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;">Padding Box</div>
+    <div class="margin-box" style="        display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    justify-content: center;
+    align-items: center;">Margin Box</div>
     <div class="bottom-box">Bottom Box</div>
 </body>
 
