@@ -1,0 +1,25 @@
+@charset "utf - 8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Malgun Gothic", Dotum;
+    font-size: 0.75em;
+    color: #333;
+    line-height: 1.8em;
+}
+
+ul {
+    margin-left: 20px;
+    list-style: none;
+}
+
+li {
+    padding-left: 15px;
+    background-image: url("/practices/practices/images/bullet11.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 8px;
+}

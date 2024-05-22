@@ -1,0 +1,51 @@
+@charset "utf - 8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Malgun Gothic", Dotum;
+    font-size: 0.75em;
+    color: #333;
+    line-height: 1.8em;
+}
+
+.tab-box {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 520px;
+}
+
+ul {
+    list-style-type: none;
+    height: 27px;
+}
+
+li {
+    float: left;
+    width: 100px;
+    height: 22px;
+    border: 1px solid #999;
+    background-color: #ccc;
+    text-align: center;
+    padding-top: 3px;
+    margin-right: 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+.tab-box > div {
+    margin-top: -1px;
+    text-align: center;
+    line-height: 200px;
+    border: 1px solid #999;
+}
+
+.selected {
+    background-color: #fc6;
+}
+

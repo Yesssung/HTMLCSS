@@ -1,0 +1,48 @@
+@charset "utf - 8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Malgun Gothic", Dotum;
+    font-size: 0.75em;
+    color: #333;
+}
+
+.tbl-ex {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px #333 solid;
+    border-bottom: 1px #333 solid;
+}
+
+td {
+    border-top: 1px #333 dotted;
+    border-bottom: 1px #333 dotted;
+    padding: 8px;
+}
+
+* {
+    border-collapse: collapse;
+}
+
+th {
+   border-top: 2px #333 solid;
+   border-bottom: 2px #333 solid;
+   padding: 8px;
+   background-color: #999;
+   font-size: 1.1em;
+   color: #fff; 
+}
+
+
+tr:hover {
+    background-color: #fc6;
+}
+
+.even {
+    background-color: #E8ECF6;
+}
